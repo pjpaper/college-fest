@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>REGISTER</title>
+
+    <div class="header" >
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
+
+
+    <link rel="stylesheet" href="Register_.css">
+
+</head>
+<body>
+
+    <div class="home">
+        <a href="index.html"><img src="res/icons8-home-30.png" alt="home"></a>
+    </div>
+
+    <div class="registerBox">
+        <h2><u>REGISTER</u></h2>
+        <form class="register" action="participate.php" method="post">
+            <div class="register1">
+                <div>
+                    <label class = "title" for="name">NAME*</label><br>
+                    <input required placeholder="Full Name" type="text" id = "name" name="name">
+                </div>
+                <div class="gender">
+                    <label class = "title" for="gender">GENDER</label><br>
+                    <label for="gender">Female</label>
+                    <input type="radio" id = "gender" name="gender" value="f">
+                    <label for="gender">Male</label>
+                    <input type="radio" id = "gender" name="gender" value="m">
+                    <label for="gender">Not prefer to say</label>
+                    <input type="radio" id = "gender" name="gender" value="n">
+                </div>
+                <div>
+                    <label class = "title" for="email">EMAIL ID</label><br>
+                    <input required placeholder="Your Email" type="email" id ="email" name="email">
+                </div>
+                <div>
+                    <label class = "title" for="contact">CONTACT</label><br>
+                    <input required placeholder="Your Contact" type="tel" id="contact" name="contact">
+                </div>
+                <div>
+                    <label class = "title" for="password">ENTER PASSWORD</label><br>
+                    <input required placeholder="Your Password" type="password" id ="password" name="password">
+                </div>
+                <div>
+                    <label class = "title" for="confirmPassword">CONFIRM PASSWORD</label><br>
+                    <input required placeholder="Confirm Password" type="password" id ="confirmPassword" name="confirmPassword">
+                </div>
+                <div>
+                    <label class = "title" for="Referral" >REFERRAL CODE</label><br>
+                    <input type="text" placeholder="(optional)" id = "Referral" name="referral">
+                </div>
+                <div>
+                    <label class = "title" for="primaryEvent">PRIMARY EVENT</label><br>
+                    <select name="event" id="event" required aria-placeholder="-select the event interested in-">
+                        <option selected hidden value=""><--Select Event--></option>
+                        <option value="event 1">Dance</option>
+                        <option value="event 2">Dramatic</option>
+                        <option value="event 2">Gaming</option>
+                        <option value="event 2">Music</option>
+                        <option value="event 2">Quiz</option>
+                        <option value="event 2">Cinematics</option>
+                        <option value="event 2">Market & Finance</option>
+                        <option value="event 2">Culinary</option>
+                        <option value="event 2">Fashion</option>
+                        <option value="event 2">MUN</option>
+                        <option value="event 2">LITfest</option>
+                        <option value="event 2">Painting</option>
+                    </select>
+                </div>
+    
+            </div>
+            
+            <div class="gridSpread">
+                <div class="itemSpread"  id="collegeBox">
+                    <label class = "title" for="college">COLLEGE</label><br>
+                    <select required name="college" id="college">
+                        <option selected hidden value="">Select Your College</option>
+                        <option value="Chandigarh University">Chandigarh University, Mohali, Punjab</option>
+                        <option value="Punjab University, Chandigarh">Punjab University, Chandigarh</option>
+                        <option value="D.A.V. College, sector 8, Chandigarh">D.A.V. College, sector 8, Chnadigarh</option>
+                        <option value="Chitkara University, HP">Chitkara University, HP</option>
+                        <option value="DTU, Delhi">DTU, Delhi</option>
+                        <option value="Hansraj College, Delhi">Hansraj College, Delhi</option>
+                        <option value="IIT Delhi">IIT Delhi</option>
+                        <option value="Thapar Institute of Engineering & Technology">Thapar Institute of Engineering & Technology</option>
+                        <option value="VIT Vellore">VIT Vellore</option>
+                    </select>
+                </div>
+
+                <div id="collegeAddressBox">
+                    <label class = "title" for="collegeAddress">PRESENT COLLEGE ADDRESS</label><br>
+                    <textarea required placeholder="Your current college address" name="collegeAddress" id="collegeAddress" cols="70" rows="4"></textarea>
+                </div>
+
+                <div class="itemSpread" id="collegeStateBox">
+                    <label class = "title" for="collegeState">COLLEGE STATE</label><br>
+                    <input required placeholder="College State" type="text" id = "collegeState" name="collegeState">
+                </div>
+
+                <div class = "itemSpread" id="branchBox">
+                    <label class = "title" for="branch">BRANCH & YEAR</label><br>
+                    <input required placeholder="Your branch along with year" type="text" id="branch" name="branch">
+                </div>
+
+            </div>
+
+            <input class="btn" type="submit" value= "REGISTER">
+            <a class="btn" href="Login.html">LOGIN</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perception '21</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Gloria+Hallelujah&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="top_navbar">
+        <div class="logo">
+            <img src="res/LOGO.png" class="logo" alt="">
+        </div>
+        <div id="nav" class="navBar">
+            <a class="navBar_element" href="events.html">EVENTS</a>
+            <a class="navBar_element" href="whyVisit.html">WHY VISIT</a>
+            <a class="navBar_element" href="sponsors.html">SPONSORS</a>
+            <a class="navBar_element" href="Register_.html">REGISTER</a>
+            <a class="navBar_element" href="Login.html">LOGIN</a>
+        </div>           
+        <div onclick="open_close_menu()" class="sideBarIcon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar2"></div>
+        </div>
+    </div>
+
+    <div style="display: none;" id="menu" class="sidebar-hide sidebar-parent">
+        <div>
+            <span style="cursor: pointer;" onclick="open_close_menu()" class="material-icons-outlined"><img src="res/close.png" alt=""></span>
+        </div>
+        <a class="sidebar-element" href="index.html">HOME</a>
+        <a class="sidebar-element" href="events.html">EVENTS</a>
+        <a class="sidebar-element" href="whyVisit.html">WHY VISIT</a>
+        <a class="sidebar-element" href="sponsors.html">SPONSORS</a>
+        <a class="sidebar-element" href="Register_.html">REGISTER</a>
+        <a class="sidebar-element" href="Login.html">LOGIN</a>    
+    </div>
+
+    
+    <div class="HomePage">
+        <img class="spinLights" src="res/spin.png" alt="img">
+        <img class="bg" src="res/bg.png" alt="">
+        <img class="HomeBackground" src="res/background_home.png" alt="">
+        <div class="mainHeading">
+            <div class="mainText">
+                <p class="title">Perception '21</p>
+                <p class="subtitle">a vissionary gala</p>
+            </div>
+            <div class="links_container">
+                <a class="" href="Register_.css">REGISTER</a>
+            </div>
+        </div>
+    </div>
+    <div class="aboutUs_main">
+        <div class="lantern_container" style="transform:translate3d(0px,0px,0px) rotate(0.0001deg); transform-style: preserve-3d; 
+        backface-visibility: hidden; pointer-events: none;">
+            <img class="aboutus_lantern1" data-depth =".9" src="res/lantern1.png" style="transform:translate3d(0px,0px, 0px);
+            transform-style:preserve-3d; backface-visibility: hidden; position:relative; display:block;">
+            <img class="aboutus_lantern2" data-depth ="-1" src="res/lantern2.png" style="transform:translate3d(0px, 0px, 0px);
+            transform-style:preserve-3d; backface-visibility: hidden; position:absolute; display:block; left:0px; top:0px;">
+            <img class="aboutus_lantern3" data-depth =".8" src="res/lantern3.png" style="transform:translate3d(0px, 0px, 0px);
+            transform-style:preserve-3d; backface-visibility: hidden; position:absolute; display:block; left:0px; top:0px;">
+            <img class="aboutus_lantern4" data-depth ="-.6" src="res/lantern4.png" style="transform:translate3d(0px, 0px, 0px);
+            transform-style:preserve-3d; backface-visibility: hidden; position:absolute; display:block; left:0px; top:0px;">
+            <img class="aboutus_lantern5" data-depth ="-.9" src="res/lantern5.png" style="transform:translate3d(0px, 0px, 0px);
+            transform-style:preserve-3d; backface-visibility: hidden; position:absolute; display:block; left:0px; top:0px;">
+        </div>
+        <div class="aboutUs_mainText" style="padding: 0px;">
+            <div class="headingContainer">ABOUT US</div>
+            <div class="aboutUs_num">
+                <div class="aboutUs_box">
+                    <div>
+                        <img class="aboutUs_img" src="res/footfall.jpg" alt="footafall">
+                    </div>
+                    <div class="aboutUs_text">
+                        <p class="count">100K+</p>
+                        <p class="whatCount">Footfall</p>
+                    </div>
+                </div>
+                <div class="aboutUs_box">
+                    <div>
+                        <img class="aboutUs_img" src="res/college.png" alt="college">
+                    </div>
+                    <div class="aboutUs_text">
+                        <p class="count">1000+</p>
+                        <p class="whatCount">Colleges</p>
+                    </div>
+                </div>
+                <div class="aboutUs_box">
+                    <div>
+                        <img class="aboutUs_img" src="res/events.jpg" alt="events">
+                    </div>
+                    <div class="aboutUs_text">
+                        <p class="count">150+</p>
+                        <p class="whatCount">Events</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div style="display: flex; justify-content: flex-end; z-index: 200;">
+                <iframe class="video" src="https://www.youtube.com/embed/tkqlir2FjuY" 
+                title="YouTube video player" frameborder="0" allow="accelerometer;
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="perception_info">
+                <p>Carrying on a legacy since last 13 years and growing at an exponential rate is not an ordinary thing. 
+                    Perception, the pride of Chandigarh University as well as of North India has kept up its promise to surpass every 
+                    expectations with each passing year. 
+                    <span style="display: none;" class="hide" id="moretext">
+                        Perception, during its 3-day vissionary gala turns into a fun and frolic filled pool playing host to 
+                        a multitude of alluring artist of both national and international origins. Giving the perfect platform to 
+                        young budding artists from all over the country, 
+                        Thomso turns on the vibrancy of the campus and crowd to new highs. Star attractions from every possible field have 
+                        continued to mesmerise the exuberant audience through their power-packed shows and performances.  On it’s 38th edition, 
+                        Thomso is back with another captivating and beguiling theme- “A Gleaming Gala”.
+                    </span>
+                    <span id="moreButton" class="moreLess_button" onclick="toggleText()">see more</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <img style="width: 100vw;" src="res/ground.png" alt="picture">
+    <!-- <div style=" border-top: 0px; top: -10px" class="majorAttractions">
+        <img class="majorAttractionsImg" src="res/majorAttraction_lantern.png" alt="img">
+        <div class="majorAttractions_heading" >PLETHORA OF EVENTS</div>
+        <div >
+            <a class="eventsIMG" href="events.html"><img src="res/leftArrow.png" alt="events"></a>
+        </div>
+    </div> -->
+    <div style="width: 100vw; z-index:2000;">
+        <div style="overflow: hidden; top: -10px;" class="footerOuterContainer">
+            <div class="footerContainer">
+                <div class="contactsContainer">
+                    <div class="canvasNight">
+                        <div class="canvas_shooting_star"></div>
+                        <div class="canvas_shooting_star"></div>
+                        <div class="canvas_shooting_star"></div>
+                        <div class="canvas_shooting_star"></div>
+                    </div>
+                    <h4 class="contact_us">CONTACT US</h4>
+                    <div class="contactInfo">
+                        <div class="footer_info">
+                            <h4 class="footer_name">Pankaj Jain</h4><br>
+                            <p class="email">
+                                pnkjjain1610@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div>
+                    <div>
+                        <h4 class="getFooter">GET DIRECTION</h4>
+                        <p class="getInfoFooter">
+                            Perception Office,<br>Multi Purpose Hall,<br>
+                            Chandigarh University,<br>Mohali
+                        </p>
+                    </div>
+                    <div class="footer_see_button">
+                        <button style="box-sizing: content-box;" class="footer_see">
+                            <a style="padding: 0%;" href="https://www.google.com/maps/place/Chandigarh+University/@30.7690909,76.573662,16.95z/data=!4m5!3m4!1s0x390ffb140bd63e07:0x68591e334d17a988!8m2!3d30.7691099!4d76.5758537" target="blank">
+                            <div class="footer_arrow">
+                                <span class="footer_map">See in map</span>
+                            </div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="followUs">
+                <div class="footer_btn">
+                    <div class="footer_icon">
+                        <div>
+                            <a href="https://www.instagram.com/chandigarhuniversity/" target="blank"><img style="width: 28px; height: 29px;" src="res/insta.png" alt="insta"></a>
+                        </div>
+                    </div>
+                    <div class="footer_icon">
+                        <div>
+                            <a href="https://www.instagram.com/chandigarhuniversity/" target="blank"><img style="width: 28px; height: 29px;" src="res/twitter.png" alt="insta"></a>
+                        </div>
+                    </div>
+                    <div class="footer_icon">
+                        <div>
+                            <a href="https://www.instagram.com/chandigarhuniversity/" target="blank"><img style="width: 28px; height: 29px;" src="res/facebook.png" alt="insta"></a>
+                        </div>
+                    </div>
+                    <div class="footer_icon">
+                        <div>
+                            <a href="https://www.youtube.com/channel/UCFZylYrvuQwF8x9w_sdhuDA" target="blank"><img style="width: 28px; height: 29px;" src="res/youtube.png" alt="insta"></a>
+                        </div>
+                    </div>
+                    <div class="footer_icon">
+                        <div>
+                            <a href="https://www.instagram.com/chandigarhuniversity/"><img style="width: 28px; height: 29px;" src="res/linkedin.png" alt="insta"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-bottom: 0%; bottom: 0%; height: 30vh; top: -60px;"  class="footer_img">
+                <img style="width: 100%;" src="res/footer.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        var x = window.matchMedia("(max-width: 700px)");
+        function open_close_menu(){
+
+            if (document.getElementById('menu').style.display === 'none'){
+                document.getElementById('menu').style.display = 'flex'
+                document.getElementById('nav').style.display = 'none';
+            }else{
+                if(x.matches){
+                    document.getElementById('menu').style.display = 'none'
+                    document.getElementById('nav').style.display = 'none';
+                }else{
+                    document.getElementById('menu').style.display = 'none'
+                    document.getElementById('nav').style.display = 'flex';
+                }
+            }
+        }
+
+        function myFunction(x){
+            if (x.matches) { // If media query matches
+                document.getElementById('nav').style.display = 'none'
+            }
+        }
+
+
+
+        var x = window.matchMedia("(max-width: 1366px)");
+        setInterval(myFunction(x),1000); 
+        x.addListener(myFunction(x));// Call listener function at run time
+     // Attach listener function on state changes
+
+    </script>
+    <script src="home.js"></script>
+</body>
+</html>

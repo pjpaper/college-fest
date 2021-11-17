@@ -1,0 +1,359 @@
+*{
+    margin-top: 0px;
+    margin-right: 0%;
+    margin-left: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: -apple-system, Helvetica Neue,sans-serif;
+}
+
+.top_navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    overflow-x: auto;
+}
+
+.logo {
+    padding-left: 17px;
+    padding-top: 12px;
+    width: 90px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 30%;
+    width : 54%;
+    z-index: 5;
+}
+
+.sideBarIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    position: fixed;
+    right: 5vw;
+}
+
+.bar1, .bar2, .bar3{
+    height: 2px;
+    width: 30px;
+    border-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.sidebar-hide{
+    transition: .6s;
+    transform: translate(100%);
+}
+
+.sidebar-parent{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #091139;
+    margin-left: 30%;
+    padding-left: 5%;
+    width: 40%;
+    padding-top: 7vh;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+
+@media only screen and (max-width:768px) {
+    .sidebar-parent{
+        width: 70%;
+        min-height: 93vh;
+        margin-left: 30%;
+        padding-left: 10%;
+        padding-top: 7vh;    
+    }
+    .sidebar-hide{
+        transition: .6s;  
+        transform: translate(100%);
+    }
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  
+a::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+  
+a:hover::after { 
+    width: 100%; 
+    left: 0; 
+}
+
+@media screen and (max-width : 768px) {
+    .logo{
+        width: 40px;
+        padding: 5px 7.5px;
+    }
+
+    .navBar{
+        display: none;
+    }
+
+    .headingContainer{
+        font-size: 30px;
+    }
+}
+
+
+.why_visit{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15%;
+    left: 0%;
+    right: 0%;
+}
+
+.whyVisit_content{
+    width: 84%;
+    padding-top: 200px;
+    position: relative;
+}
+.whyVisit_content #whyVisit_heading{
+    text-shadow: 0 4px 6px #000;
+    color: #fff;
+    font-size: 60px;
+    line-height: 75px;
+    font-family: PlayFair Display;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+
+.whyVisit_content #whyVisit_subHead{
+    margin: 0;
+    text-shadow: 0 4px 6px #000;
+    color: #fff;
+    font-size: 20px;
+    font-family: lato;
+    line-height: 40px;
+}
+
+.events-mid{
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+}
+
+.events_head{
+
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    padding-left: 8.5vw;
+    line-height: 19vh;
+    margin: 0;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.events-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 82%;
+}
+
+.events-element{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    font-weight: 700;
+    position: relative;
+    width: 17vw;
+    z-index: 10;
+    margin: 0 36px;
+    border-radius: 4px;
+}
+
+.events-contentOverlay{
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;   
+    transition: all .4s ease-in-out 0s;
+}
+
+.fade-in-bottom{
+    top:80%;
+}
+
+.content-details{
+    color: white;
+    font-size: .8cm;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+.content-details{
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: 400;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    transition: all .3s ease-in-out 0s;
+}
+
+@media only screen and (max-width: 850px){
+    .why_visit{
+        background-size: cover !important;
+    }
+    .whyVisit_content{
+        width: 100vw;
+        padding-top: 35%;
+    }
+    .whyVisit_content #whyVisit_heading{
+        font-size: 24px;
+        line-height: 45px;
+        margin-left: 27px;
+    }
+
+    .whyVisit_content #whyVisit_subHead{
+        margin-left: 27px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .events-box{
+        justify-content: right;
+        width: 90vw;
+        margin: 0 5vw;
+    }
+    .events-element{
+        margin: 6px 14px;
+        height: 133px;
+        width: 98px;
+    }
+
+    .events-contentOverlay{
+        background: none;
+    }
+
+    .content-details{
+        display: none;
+    }
+    .fade-in-bottom{
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.whyVisit-heading{
+    color:white;
+    font-family: 'PlayFair Display', sans-serif ;
+    font-size: 40px;
+    padding-left: 8.5vw;
+    line-height: 19vh;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.celebrities{
+    width: 100%;
+    background-color: #000!important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.celebrities-child{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 33px;
+    transition: all 1s ease-in;
+    max-height: 120vh;
+}
+
+.celebrity-name{
+    color: #fff;
+    font-family: 'Black Ops One', cursive;
+    font-size: 28px;
+    position: relative;
+    bottom: 11vh;
+    width: 11vw;
+    text-shadow: 0 4px 8px #000;
+    left: -2.5vw;
+}
+
+.celebrities-components{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 33px;
+    transition: all 1s ease-in;
+    max-height: 120vh;
+}
+
+@media only screen and (max-width:700px) {
+    .celebrities{
+        width: 100%;
+    }
+    .celebrities-child{
+        margin: 10px;
+    }
+    .celebrities-components{
+        margin: 10px;
+    }
+    .celebrity-name{
+        font-size: 12px;
+        position: relative;
+        left: -7vw;
+        bottom: 7vh;
+    }
+}

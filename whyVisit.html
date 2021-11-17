@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <?php echo $candidate['id']?> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perception.in/whyperception</title>
+    <link rel="stylesheet" href="whyVisit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="root">
+        <div class="top_navbar">
+            <div class="logo">
+                <img src="res/LOGO-REGISTER.png" class="logo" alt="">
+            </div>
+            <div id="nav" class="navBar">
+                <a class="navBar_element" href="events.html">EVENTS</a>
+                <a class="navBar_element" href="whyVisit.html">WHY VISIT</a>
+                <a class="navBar_element" href="sponsors.html">SPONSORS</a>
+                <a class="navBar_element" href="Register_.html">REGISTER</a>
+                <a class="navBar_element" href="Login.html">LOGIN</a>
+            </div>
+            <div onclick="open_close_menu()" class="sideBarIcon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar2"></div>
+            </div>
+        </div>
+
+        <div style="display: none;" id="menu" class="sidebar-hide sidebar-parent">
+            <div>
+                <span style="cursor: pointer;" onclick="open_close_menu()" class="material-icons-outlined"><img src="res/close.png" alt="">
+                    </span>
+            </div>
+            <a class="sidebar-element" href="index.html">HOME</a>
+            <a class="sidebar-element" href="whyVisit.html">WHY VISIT</a>
+            <a class="sidebar-element" href="events.html">EVENTS</a>
+            <a class="sidebar-element" href="sponsors.html">SPONSORS</a>
+            <a class="sidebar-element" href="Register_.html">REGISTER</a>
+            <a class="sidebar-element" href="Login.html">LOGIN</a>
+            
+        </div>
+
+        <div style = "right: 0%; background-color: rgb(0,0,0);">
+            <div class="why_visit">
+                <img style="right: 0%;position: absolute; width: 100vw;" src="res/rave.png" alt="img">
+                <div class="whyVisit_content">
+                    <p id="whyVisit_heading">WHY VISIT PERCEPTION?</p>
+                    <P id="whyVisit_subHead">
+                        Perception is the largest cultural festival of North India attracting crowd of over 30,000 people. 
+                        With over 150+ events in line, Perception presents a 3-day chronicle playing host to eminent celebrities 
+                        and talented scholars.
+                    </P>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: black;">
+            <div>
+                <p style="background-color: black;" class="whyVisit-heading">ASSOCIATED CELEBRITTIES</p>
+                <div class="celebrities">
+                    <div>
+                        <div class="celebrities-child">
+                            <div>
+                                <div class="celebrities-component">
+                                    <img style="height: 45vh; width: 16vw; object-fit: cover;" src="res/nucleya.jpg" alt="img">
+                                    <div class="celebrity-name">Nucleya</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="celebrities-child">
+                            <div>
+                                <div class="celebrities-component">
+                                    <img style="height: 45vh; width: 16vw; object-fit: cover;" src="res/hardy.jpg" alt="img">
+                                    <div class="celebrity-name">Hardy Sandhu</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="celebrities-child">
+                            <div>
+                                <div class="celebrities-component">
+                                    <img style="height: 45vh; width: 16vw; object-fit: cover;" src="res/BT.jpeg" alt="img">
+                                    <div class="celebrity-name">BTS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="celebrities-child">
+                            <div>
+                                <div class="celebrities-component">
+                                    <img style="height: 45vh; width: 16vw; object-fit: cover;" src="res/KENNY.jpg" alt="img">
+                                    <div class="celebrity-name">Kenny Sebestian</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="celebrities-child">
+                            <div>
+                                <div class="celebrities-component">
+                                    <img style="height: 45vh; width: 16vw; object-fit: cover;" src="res/Isha.jpg" alt="img">
+                                    <div class="celebrity-name">Isha Verma</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function open_close_menu(){
+            let x = window.matchMedia("(max-width: 700px)")
+            if (document.getElementById('menu').style.display === 'none'){
+                document.getElementById('menu').style.display = 'flex'
+                document.getElementById('nav').style.display = 'none';
+            }else{
+                document.getElementById('menu').style.display = 'none'
+                document.getElementById('nav').style.display = 'flex';
+            }
+        }
+
+        function myFunction(x){
+            if (x.matches) { // If media query matches
+                document.getElementById('nav').style.display = 'none'
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+    </script>
+</body>
+</html>
